@@ -1,0 +1,152 @@
+#container {
+    position:absolute;
+     font-family: sans-serif;
+     user-select: none;
+     -webkit-user-select:none;
+     -moz-user-select: none;
+     -ms-user-select:none;
+     
+   }
+   
+   #toolBar {
+     overflow: hidden;
+     background-color: #333;
+     width: 370px;
+     height: 40px;
+     border-radius: 10px;
+     text-align: center;
+    cursor: move;
+   }
+  *{
+    font-size: 13px;
+  }
+   .swatch{
+    width: 15px;
+     height: 15px;
+     outline-color: rgba(255, 255, 255, 0.219);
+    outline-width: 1px;
+    outline-style: solid;
+     
+   }
+   .swatch.active{
+    border: 1px solid red ;
+    width: 13px;
+    height: 13px;
+  }
+    .dropbtn { 
+      float: left;
+     color: #f2f2f2;
+     text-align: center; 
+     padding-top: 4px ;
+     padding-left: 5px ;
+     padding-bottom: 5px ;
+     padding-right: 5px;
+     text-decoration: none;
+     cursor: grab;
+     
+   }
+  
+   
+   .dropbtn:hover, .dropbtn:focus {
+     background-color: #a7d3f7;
+     color: black;
+  
+     
+   }
+    .dropdown-content {
+    visibility: hidden;
+    width: 80px;
+    height:110px;
+    background-color: rgb(160, 185, 206);
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -27px;
+    top:105% ;
+    left:10% ;
+    cursor: pointer;
+     
+    }
+   
+  .show {
+      visibility: visible;
+   }
+   #fillcolors1{
+    display: grid;
+    grid-template-columns:18px 18px 18px 18px 18px 18px  ;
+    grid-template-rows: 1.2em 1.2em 1.2em  1.2em 1.2em;
+    margin: 3px;
+    padding:4px; 
+    
+  }
+  #fillcolors{
+   top: 105%;
+  left: 38%;
+  width:120px;
+  height: 170px;
+  }
+     #outline1{
+      display: grid;
+      grid-template-columns:18px 18px 18px 18px 18px 18px  ;
+      grid-template-rows: 1.2em 1.2em 1.2em  1.2em 1.2em;
+      margin: 3px;
+      padding:4px;
+     
+     }
+     #outlinecolor{
+      top: 105%;
+     left: 50%;
+     width:120px;
+     height: 150px;
+     }
+    .shape{
+      all:unset;
+      position:relative;
+      font-size:15px;
+      border:none;
+      padding:3px;
+      margin:5px;
+      height:20px;
+      width:20px;
+      }
+   .shape:hover{
+       background-color: #a7d3f7;
+                  }
+   .styling{
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding-top: 8px ;
+     padding-left: 5.6px ;
+     padding-bottom: 5px ;
+     padding-right: 5px;
+     text-decoration: none;
+     cursor: pointer;
+                           }
+       .styling:hover{
+            background-color:#a7d3f7;
+            color: black;
+                              }
+    
+          #load{
+              display:none;
+                                  }
+         #load1{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding-top: 8px ;
+            padding-left: 5px ;
+            padding-bottom: 5px ;
+            padding-right: 5px;
+            text-decoration: none;
+           cursor: pointer;
+                                  }
+     #load1:hover{
+   background-color:#a7d3f7;
+   color: black;      
+    }
+   
+                                              

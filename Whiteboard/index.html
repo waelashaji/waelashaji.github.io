@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body id="body">
+ <main>
+    <div id="container">
+        <div>
+            <button id=test>test</button>
+        </div>
+        <div id="toolBar">
+            
+            <div class="dropdown"> 
+                
+                <div onclick="myFunction(this)" class="dropbtn" >
+                    <img  class="dropbtn"src="https://img.icons8.com/fluent-systems-filled/24/ffffff/shape.png"/>
+                </div>
+
+                <div id="shapes" class="dropdown-content">
+
+                    <button id="rect" class="shape" >&#9645</button>
+                    <button id="triangle" class="shape">&#9651</button>
+                    <button id="ellipse" class="shape">&#9711</button>
+                    <button id="line" class="shape">&#9586</button>
+                    <button id="oneHeadArrow" class="shape" >&#8600</button>
+                    <button id="twoHeadArrow" class="shape">&#10529 </button> 
+
+            
+                </div>
+            
+            </div>
+
+            <div id="text"  class="styling"><img  src="https://img.icons8.com/fluent-systems-regular/24/ffffff/text.png"/></div>
+            <div id="path"class="styling"><img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/drawing.png"/> </div>
+            
+
+            <div class="dropdown">
+
+                <div onclick="myFunction(this)"  class="dropbtn" >
+                    <img  class="dropbtn"src="https://img.icons8.com/android/24/ffffff/fill-color.png"/>
+                </div>
+
+                <div id="fillcolors" class="dropdown-content">
+    
+                    <div id="fillcolors1" ></div>
+    
+                    <form>More Fill Colors 
+                        
+                        <input type="color" id="fillColor" name="color" value="#4472c4"/>
+   
+                        <div><input type="checkbox" id="noFill" style="width: 15px; height:15px" >
+   
+                            <label for="noFill">No Fill</label>
+   
+                        </div>
+   
+                    </form>
+                    <div>weight <input type="number" id="outlineWidth" min="1" max="6" value="2"></div>
+                </div>
+
+            </div>
+
+
+            <div class="dropdown">
+
+                <div onclick="myFunction(this)"  class="dropbtn" ><img class="dropbtn" src="https://img.icons8.com/android/24/ffffff/color-dropper.png"/></div>
+
+                <div id="outlinecolor" class="dropdown-content">
+
+                    <div id="outline1" ></div>
+
+                    <form>More Outline Colors <input type="color" id="outline" name="outline" value="#2f528f"/>
+
+                        <div>
+                            <input type="checkbox" id="noOutline" style="width: 15px; height:15px" >
+
+                            <label for="noOutline">No Fill</label>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <div id="delete"   class="styling"><img src="https://img.icons8.com/material-sharp/24/ffffff/erase.png"/></div>
+
+            <div id="save" class="styling"><img src="https://img.icons8.com/material-sharp/24/ffffff/save.png"/></div>
+
+            <input type="file" id="load"  >
+
+            <div onclick="document.getElementById('load').click();" id=load1 style='font-size:13px'><img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/--add-document.png"/></div>
+
+            <div id="clear"  class="styling"><img src="https://img.icons8.com/android/24/ffffff/trash.png"/></div>
+
+            <div id=outline></div>
+            <div id=outlineWidth></div>
+            <div id=noOutline></div>
+            <div id=noFill></div>
+
+        </main>
+
+        <canvas id="canvas"></canvas>
+
+    </div>
+
+</div>
+
+<script src="https://kit.fontawesome.com/975734752e.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<a href="https://icons8.com/icon/11493/fill-color"></a>
+
+<script src="index.js"></script>
+<script src="panel.js"></script>
+
+</body>
+
+</html>
